@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var frontLabel: UILabel!
     
+    @IBOutlet weak var card: UILabel!
+    
     var flashcards = [Flashcard]()
     // current flashcard index
     var currentIndex = 0
@@ -90,6 +92,9 @@ class ViewController: UIViewController {
     func flipFlashcard() {
         frontLabel.isHidden = true
         
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            self.frontLabel.isHidden = true
+        })
         
     }
     
