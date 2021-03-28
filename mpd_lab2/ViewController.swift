@@ -43,8 +43,7 @@ class ViewController: UIViewController {
     @IBAction func didTapOnNext(_ sender: Any) {
         // update cur index
         currentIndex += 1
-        // update labels
-        updateLabels()
+        
         // update buttons
         updateNextPrevButtons()
         
@@ -108,10 +107,17 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.3, animations: {
             self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
         }, completion: { finished in
+            
+            // update labels
+            self.updateLabels()
+            
             self.animateCardIn()
         })
     }
     func animateCardIn() {
+        
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
         UIView.animate(withDuration: 0.3, animations: {
             self.card.transform = CGAffineTransform.identity
         })
