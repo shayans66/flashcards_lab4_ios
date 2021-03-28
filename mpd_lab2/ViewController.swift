@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         updateNextPrevButtons()
         
         frontLabel.isHidden = false
+        
+        animateCardOut()
     }
     
     func updateLabels(){
