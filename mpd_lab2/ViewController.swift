@@ -16,8 +16,9 @@ struct Flashcard {
 class ViewController: UIViewController {
 
     @IBOutlet weak var backLabel: UILabel!
-    
     @IBOutlet weak var frontLabel: UILabel!
+    
+    
     
     @IBOutlet weak var card: UILabel!
     
@@ -88,14 +89,30 @@ class ViewController: UIViewController {
     
     @IBAction func tappedOnFlashcard(_ sender: Any) {
         flipFlashcard()
+        
     }
     func flipFlashcard() {
-        frontLabel.isHidden = true
+        
         
         UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight, animations: {
             self.frontLabel.isHidden = true
+            
+            print("flipping !!!!")
         })
         
+    }
+    
+    func animateCardOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        }, completion: { finished in
+            self.animateCardIn()
+        })
+    }
+    func animateCardIn() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.card.transform = CGAffineTransform.identity
+        })
     }
     
     

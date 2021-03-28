@@ -73,7 +73,7 @@
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="4Wd-2P-s2i" id="dKu-Md-Bcv"/>
-                        <outlet property="card" destination="HQ1-Eu-OUc" id="6Ch-IT-VSc"/>
+                        <outlet property="card" destination="X03-ib-aQv" id="6mU-q2-MeE"/>
                         <outlet property="frontLabel" destination="HQ1-Eu-OUc" id="ujk-4G-eTE"/>
                         <outlet property="nextButton" destination="JeU-gX-a27" id="Via-EY-QsE"/>
                         <outlet property="prevButton" destination="bwu-RX-Gap" id="AnD-Lb-uKH"/>
