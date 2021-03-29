@@ -6,7 +6,6 @@
 Flashcard application complete with animations, flashcard information caching capabilities, question/answer viewing, and ability to switch between flashcards
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
 <img src="https://i.imgur.com/ArLnFBy.gif" width=200><br>
 
